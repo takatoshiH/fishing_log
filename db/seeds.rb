@@ -1,5 +1,3 @@
-User.create(email: 'admin@test.com', password: 'password')
-User.create(email: 'satou@test.com', password: 'password')
-User.create(email: 'suzuki@test.com', password: 'password')
-User.create(email: 'tanaka@test.com', password: 'password')
-User.create(email: 'test@test.com', password: 'password')
+User.create(email: 'admin@test.com', password: 'password') unless User.find_by(email:'admin@test.com') 
+
+Fishing.create(weather: "晴れ",PrecipitationAmount: 100, waterTemperature: 20, area: "福岡川")
